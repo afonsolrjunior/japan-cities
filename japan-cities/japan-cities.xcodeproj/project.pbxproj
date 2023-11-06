@@ -32,6 +32,7 @@
 		D80410C82AF91C6700E05A53 /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D80410B62AF91C6600E05A53 /* Poppins-Thin.ttf */; };
 		D80410C92AF91C6700E05A53 /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D80410B72AF91C6600E05A53 /* Poppins-ExtraLight.ttf */; };
 		D80410CA2AF91C6700E05A53 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D80410B82AF91C6700E05A53 /* Poppins-SemiBold.ttf */; };
+		D80410D52AF9246E00E05A53 /* FontProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80410D42AF9246E00E05A53 /* FontProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,7 +81,8 @@
 		D80410B62AF91C6600E05A53 /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
 		D80410B72AF91C6600E05A53 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
 		D80410B82AF91C6700E05A53 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
-		D80410CD2AF9218A00E05A53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D80410CD2AF9218A00E05A53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D80410D42AF9246E00E05A53 /* FontProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,10 +133,8 @@
 		D804107B2AF91B4600E05A53 /* japan-cities */ = {
 			isa = PBXGroup;
 			children = (
-				D80410CD2AF9218A00E05A53 /* Info.plist */,
 				D80410CC2AF91D3900E05A53 /* Resources */,
 				D80410CB2AF91D2500E05A53 /* Core */,
-				D804107E2AF91B4600E05A53 /* ContentView.swift */,
 				D80410822AF91B4800E05A53 /* Preview Content */,
 			);
 			path = "japan-cities";
@@ -193,6 +193,8 @@
 		D80410CB2AF91D2500E05A53 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				D80410D32AF9244F00E05A53 /* Services */,
+				D80410D22AF9243F00E05A53 /* UI */,
 				D804107C2AF91B4600E05A53 /* japan_citiesApp.swift */,
 			);
 			path = Core;
@@ -201,10 +203,59 @@
 		D80410CC2AF91D3900E05A53 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D80410CD2AF9218A00E05A53 /* Info.plist */,
 				D80410802AF91B4800E05A53 /* Assets.xcassets */,
 				D80410A62AF91C4B00E05A53 /* Fonts */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		D80410CE2AF923ED00E05A53 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D804107E2AF91B4600E05A53 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D80410CF2AF923F600E05A53 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D80410D02AF923FF00E05A53 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D80410D12AF9240500E05A53 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		D80410D22AF9243F00E05A53 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D80410D12AF9240500E05A53 /* Coordinators */,
+				D80410D02AF923FF00E05A53 /* ViewModels */,
+				D80410CF2AF923F600E05A53 /* Models */,
+				D80410CE2AF923ED00E05A53 /* Views */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		D80410D32AF9244F00E05A53 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D80410D42AF9246E00E05A53 /* FontProvider.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -356,6 +407,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D804107F2AF91B4600E05A53 /* ContentView.swift in Sources */,
+				D80410D52AF9246E00E05A53 /* FontProvider.swift in Sources */,
 				D804107D2AF91B4600E05A53 /* japan_citiesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -523,7 +575,7 @@
 				DEVELOPMENT_TEAM = 93SN3983XU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "japan-cities/Info.plist";
+				INFOPLIST_FILE = "japan-cities/Resources/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Jnto;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -554,7 +606,7 @@
 				DEVELOPMENT_TEAM = 93SN3983XU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "japan-cities/Info.plist";
+				INFOPLIST_FILE = "japan-cities/Resources/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Jnto;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
