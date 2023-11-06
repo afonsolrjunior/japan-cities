@@ -1,0 +1,59 @@
+{
+    "cities": [
+        {
+            "id": 0,
+            "name": "Tokyo",
+            "description": "Tokyo is the capital city of Japan and the most populous metropolitan area in the world. It is one of the most captivating cities in the world, from the majestic temples of traditional Japan to the bright neon lights of Shibuya."
+        },
+        {
+            "id": 1,
+            "name": "Kyoto",
+            "description": "Kyoto, considered by many as Japan’s most beautiful city, was the Japanese capital until the government was moved to Tokyo in 1868. However, the city is still Japan’s religious center with over 1000 Buddhist temples.\nKyoto is also home to some of Japan’s most iconic landmarks, with some of the most sublime and exquisite gardens, temples and masterpieces you will ever see."
+        },
+        {
+            "id": 2,
+            "name": "Osaka",
+            "description": "Osaka is Japan’s third-largest city and was the country’s first capital. It is considered a vital economic center in Japan. It is home to the largest seaport in Japan and many leading Japanese manufacturers.\nOsaka city is also deemed a culinary paradise: its nickname Tenka no Daidokoro means the nation’s kitchen."
+        },
+        {
+            "id": 3,
+            "name": "Yokohama",
+            "description": "Located in the Tokyo urban area, Yokohama is actually Japan’s second most populated city. 20 minutes south of Tokyo Station by train, Yokohama’s bay and Chinatown are not to be missed by curious travelers and food lovers."
+        },
+        {
+            "id": 4,
+            "name": "Nagoya",
+            "description": "The largest city in the central Chubu region, Nagoya is one of Japan’s major ports and also an important Shinkansen bullet trains hub. From shopping to science and kid-friendly amusement parks, Nagoya’s attractions are certainly not to be missed."
+        },
+        {
+            "id": 5,
+            "name": "Kobe",
+            "description": "Enclosed by the sea on one side and a majestic mountain range on the other, Kobe is close to Osaka and Kyoto, and also considered one of Japan’s most beautiful port cities… lest we forget the delicious Kobe beef"
+        },
+        {
+            "id": 6,
+            "name": "Fukuoka",
+            "description": "The city of Fukuoka is one of the main tourist destinations in southern Japan, and it is listed among Japan’s ten most populous cities. It is the largest city on the island of Kyushu, and packed with amazing travel experiences"
+        },
+        {
+            "id": 7,
+            "name": "Hiroshima",
+            "description": "Hiroshima‘s deep historical roots are evident in its ancient gardens and castles, as well as the remains of the atomic bombing during the World War II. Nowadays, Hiroshima and its neighbour island, Miyajima, are home to over one million people and a favorite stop for tourists"
+        },
+        {
+            "id": 8,
+            "name": "Nara",
+            "description": "Nara was the first “real” capital of Japan, remaining such for less than a century. This historic location is home to a nearly unmatched eight UNESCO World Heritage Sites, including numerous Buddhist temples and the mighty Todai-ji, home of the world’s largest bronze statue of the Buddha."
+        },
+        {
+            "id": 9,
+            "name": "Sapporo",
+            "description": "Sapporo is the fifth largest city in Japan and capital of the northern island of Hokkaido. In less than two centuries, Sapporo has enjoyed rapid growth and now it is known for its winter sports venues, great outdoor areas, ramen, and beer."
+        },
+        {
+            "id": 10,
+            "name": "Takayama",
+            "description": "Takayama, in the area of the Japanese Alps, offers a taste of the Japanese culture of yesterday and today. The area holds plenty of indulgences for the avid sightseer – green fields dotted with rustic farmhouses, Japanese gardens, shrines, temples, castle ruins, and well preserved historic buildings, such as Edo period houses and samurai dwellings."
+        }
+    ]
+}
